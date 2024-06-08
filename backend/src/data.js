@@ -66,3 +66,22 @@ export const sample_foods = [
     tags: ["FastFood", "Pizza", "Lunch"],
   },
 ];
+
+export const sample_users = [
+  {
+    id: 1,
+    name: "admin",
+    email: "admin@admin.com",
+    password: "admin",
+    address: "Toronto On",
+    isAdmin: true,
+  },
+  {
+    id: 2,
+    name: "Jan Kowalski",
+    email: "jkowalski@gmail.com",
+    password: "12345",
+    address: "Shanghai",
+    isAdmin: false,
+  },
+];

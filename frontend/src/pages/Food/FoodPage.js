@@ -29,11 +29,11 @@ export default function FoodPage() {
         <div className={classes.container}>
           <img
             className={classes.image}
-            src={`/foods/${food.imageUrl}`}
+            src={`${food.imageUrl}`}
             alt={food.name}
           />
           <div className={classes.details}>
-            <div className={classes.header}>
+            {/* <div className={classes.header}>
               <span className={classes.name}>{food.name}</span>
               <span
                 className={`${classes.favorite} ${
@@ -45,7 +45,7 @@ export default function FoodPage() {
             </div>
             <div className={classes.rating}>
               <StarRating stars={food.stars} size={25} />
-            </div>
+            </div> */}
             <div className={classes.origins}>
               {food.origins?.map((origin) => (
                 <span key={origin}>{origin}</span>

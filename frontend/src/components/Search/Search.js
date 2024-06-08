@@ -8,6 +8,7 @@ export default function Search({ tags }) {
   const { searchTerm } = useParams();
   useEffect(() => {
     setTerm(searchTerm ?? "");
+    console.log(searchTerm);
   }, [searchTerm]);
 
   useEffect(() => {
@@ -57,19 +58,20 @@ export default function Search({ tags }) {
           <li key={tag}>
             <button
               onClick={() => {
-                setTerm(tag);
-                navigate("/search/" + tag);
+                setTerm(tag.name);
+                navigate("/search/" + tag.name);
               }}
-              className={tag === searchTerm ? classes.active : null}
+              className={tag.name === searchTerm ? classes.active : null}
             >
-              {tag}
+              {`${tag.name} (${tag.count})`}
             </button>
           </li>
         ))}
         <li key={null}>
           <button
             className={
-              !tags.flat().includes(searchTerm) && searchTerm
+              !tags.flatMap((tag) => tag.name).includes(searchTerm) &&
+              searchTerm
                 ? classes.active
                 : null
             }

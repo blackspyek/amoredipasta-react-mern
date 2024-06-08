@@ -11,12 +11,12 @@ export default function Thumbnails({ foods }) {
           <Link to={`/food/${food.id}`}>
             <img
               className={classes.image}
-              src={`/foods/${food.imageUrl}`}
+              src={`${food.imageUrl}`}
               alt={food.name}
             />
             <div className={classes.content}>
               <div className={classes.name}>{food.name}</div>
-              <span
+              {/* <span
                 className={`${classes.favorite} ${
                   food.favorite ? "" : classes.not
                 }`}
@@ -25,7 +25,7 @@ export default function Thumbnails({ foods }) {
               </span>
               <div className={classes.stars}>
                 <StarRating stars={food.stars} />
-              </div>
+              </div> */}
 
               <div className={classes.product_item_footer}>
                 <div className={classes.origins}>

@@ -1,0 +1,9 @@
+export const OrderStatus = {
+  NEW: "NEW",
+  PAYED: "PAYED",
+  DELIVERED: "DELIVERED",
+  DELIVERY: "DELIVERY",
+  CANCELED: "CANCELED",
+  REFUNDED: "REFUNDED",
+  PREPARING: "PREPARING",
+};
