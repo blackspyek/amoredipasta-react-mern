@@ -1,6 +1,7 @@
 import { connect, set } from "mongoose";
 import { UserModel } from "../models/user.model.js";
 import { FoodModel } from "../models/food.model.js";
+import { OrderModel } from "../models/order.model.js";
 import { sample_foods } from "../data.js";
 import { sample_users } from "../data.js";
 import bcrypt from "bcryptjs";

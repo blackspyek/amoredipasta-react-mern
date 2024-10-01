@@ -14,7 +14,7 @@ export default function PaypalButtons({ order }) {
   return (
     <PayPalScriptProvider
       options={{
-        clientId: "CLIEND_ID_PAYPAL",
+        clientId: "PAYPAL API KEY",
       }}
     >
       <Buttons order={order} />

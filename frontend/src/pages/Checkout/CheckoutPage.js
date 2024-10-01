@@ -35,7 +35,7 @@ export default function CheckoutPage() {
   };
 
   return (
-    <>
+    <div className={classes.container}>
       <form onSubmit={handleSubmit(submit)} className={classes.container}>
         <div className={classes.content}>
           <Title title="Order Form" fontSize="1.6rem" />
@@ -87,6 +87,6 @@ export default function CheckoutPage() {
           </div>
         </div>
       </form>
-    </>
+    </div>
   );
 }
